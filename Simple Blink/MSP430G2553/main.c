@@ -1,12 +1,21 @@
-#include <msp430.h> 
+#include <msp430.h>
 
 
 /**
- * main.c
+ * blink.c
  */
-int main(void)
+void main(void)
 {
-	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
-	
-	return 0;
+    WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
+    P1DIR |= 0x41;                  // configure P1.0 and P1.7 as output
+
+    volatile unsigned int i;        // volatile to prevent optimization
+
+    while(1)
+    {
+        P1OUT ^= 0x40;              // toggle P1.0
+        for(i=5000; i>0; i--);     // delay
+        P1OUT ^= 0x01;              // toggle P1.7
+        for(i=5000; i>0; i--);      //delay
+    }
 }
