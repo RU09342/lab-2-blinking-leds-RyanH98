@@ -29,9 +29,16 @@ void main(void)
     P1REN |= BUTTON; //Enable the pull resistor on pin 1.3.
     P1OUT |= BUTTON; //Tell the pull resistor to pull up.
 
+    int pos = 000000001; //Initialize position variable.
+    int speed = 0; //Initialize speed variable.
+
     while(1)
     {
-        P1OUT ^= LED0; //Toggle pin 1.0 (LED0).
-        for(i=5000; i>0; i--); //Use a for loop to delay.
+        for(pos = 000000001; pos != 010000000; pos<<){
+
+        }
+        for(pos = 100000000; pos != 000000010; pos>>){
+
+        }
     }
 }
