@@ -1,5 +1,7 @@
 #include <msp430.h>
 
+//These pin assignments are for the G2553.
+
 #define BUTTON BIT3                 //Define "BUTTON" as bit 3.
 #define LED0 BIT0                   //Define "LED0" as bit 0.
 #define INP (P1IN & BUTTON)         //Define "INP" for checking if there is an input on pin 1.3.

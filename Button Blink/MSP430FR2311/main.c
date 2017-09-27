@@ -2,6 +2,8 @@
 
 #define BUTTON BIT3                 //Define "BUTTON" as bit 3.
 #define LED0 BIT0                   //Define "LED0" as bit 0.
+#define INP (P1IN & BUTTON)         //Define "INP" for checking if there is an input on pin 1.3.
+int i = 0;                          //Initialize int i for later use.
 
 void main(void)
 {
@@ -17,11 +19,13 @@ void main(void)
     P1OUT |= BUTTON;                //Tell the pull resistor to pull up.
 
     while(1) {
-            if(!(P1IN & BUTTON))    //Check if there is an input on pin 1.3.
-                    P1OUT |= LED0;  //If there is, turn the LED on.
-            else
-                    P1OUT &= ~LED0; //When there isn't an input, turn the LED off.
-
-    }
+        if(!INP && !i){             //The first time the button is pressed, toggle the LED once and then set i = 1.
+            P1OUT ^= LED0;
+            i = 1;
+        }
+        else if(INP && i){          //Once the button is released and i = 1, set i = 0. This lets the LED toggle only once per button press.
+            i = 0;
+        }
+    }                               //This code mostly works for toggling the button, but the lack of debouncing means that sometimes the button toggles multiple times on a press.
 }
 
