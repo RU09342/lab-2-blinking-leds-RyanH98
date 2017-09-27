@@ -1,4 +1,4 @@
-#include <msp430.h>
+#include <msp430FR5994.h>
 
 //The following pin assignments are for the FR5994.
 
@@ -17,6 +17,7 @@ void main(void)
     P5DIR &= ~BUTTON;               //Set pin 5.6 (Button) as an input.
     P5REN |= BUTTON;                //Enable the pull resistor on pin 5.6.
     P5OUT |= BUTTON;                //Tell the pull resistor to pull up.
+    PM5CTL0 &= ~LOCKLPM5;            //Disable high impedance mode.
 
     while(1) {
         if(!INP && !i){             //The first time the button is pressed, toggle the LED once and then set i = 1.
