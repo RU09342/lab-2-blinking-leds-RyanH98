@@ -17,28 +17,28 @@ void main(void)
 {
     WDTCTL = WDTPW | WDTHOLD; // stop watchdog timer
 
-    P1SEL &= (~LED0 & ~LED1 & ~LED2 & ~LED3 & ~LED4 & ~LED5 & ~LED6 & ~BUTTON); //Select the I/O mode for pins 1.0 to 1.7.
-    P2SEL &= (~LED7 & ~LED8); //Select the I/O mode for pins 2.0 and 2.1.
+    P1SEL &= 0xFF; //Select the I/O mode for pins 1.0 to 1.7.
+    P2SEL &= 0x03; //Select the I/O mode for pins 2.0 and 2.1.
 
-    P1DIR |= LED0 | LED1 | LED2 | LED3 | LED4 | LED5 | LED6; //Set pins 1.0 to 1.7 (except 1.3) as outputs.
-    P2DIR |= LED7 | LED8; //Set pins 2.0 and 2.1 as outputs.
-    P1OUT &= (~LED0 & ~LED1 & ~LED2 & ~LED3 & ~LED4 & ~LED5 & ~LED6); //Set the initial LED condition to off for 1.0 to 1.7.
-    P2OUT &= (~LED7 & ~LED8); //Set the initial LED condition to off for 2.0 and 2.1.
+    P1DIR |= 0xF7; //Set pins 1.0 to 1.7 (except 1.3) as outputs.
+    P2DIR |= 0x03; //Set pins 2.0 and 2.1 as outputs.
+    P1OUT &= 0xF7; //Set the initial LED condition to off for 1.0 to 1.7.
+    P2OUT &= 0x03; //Set the initial LED condition to off for 2.0 and 2.1.
 
     P1DIR &= ~BUTTON; //Set pin 1.3 (Button) as an input.
     P1REN |= BUTTON; //Enable the pull resistor on pin 1.3.
     P1OUT |= BUTTON; //Tell the pull resistor to pull up.
 
-    int pos = 000000001; //Initialize position variable.
+    int pos = 0x01; //Initialize position variable.
     int speed = 0; //Initialize speed variable.
 
     while(1)
     {
-        for(pos = 000000001; pos != 010000000; pos<<){
-
+        for(pos = 0x01; pos <= 0x80; pos = pos << 1){
+            P1OUT &= pos;
         }
-        for(pos = 100000000; pos != 000000010; pos>>){
-
+        for(pos = 0x80; pos >= 0x01; pos = pos >> 1){
+            P1OUT &= pos;
         }
     }
 }
