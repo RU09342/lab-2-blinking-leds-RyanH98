@@ -29,6 +29,6 @@ void main(void)
         else if(INP && i){          //Once the button is released and i = 1, set i = 0. This lets the LED toggle only once per button press.
             i = 0;
         }
-    }                               //This code mostly works for toggling the button, but the lack of debouncing means that sometimes the button toggles multiple times on a press.
+    }                               //This uses polling to toggle the LED by checking for inputs constantly.
 }
 

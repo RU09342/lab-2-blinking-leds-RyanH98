@@ -4,7 +4,7 @@
 
 #define BUTTON BIT6                 //Define "BUTTON" as bit 6.
 #define LED0 BIT0                   //Define "LED0" as bit 0.
-#define INP (P5IN & BUTTON)         //Define "INP" for checking if there is an input on pin 1.3.
+#define INP (P5IN & BUTTON)         //Define "INP" for checking if there is an input on pin 5.6
 int i = 0;                          //Initialize int i for later use.
 
 void main(void)
@@ -27,6 +27,6 @@ void main(void)
         else if(INP && i){          //Once the button is released and i = 1, set i = 0. This lets the LED toggle only once per button press.
             i = 0;
         }
-    }                               //This code mostly works for toggling the button, but the lack of debouncing means that sometimes the button toggles multiple times on a press.
+    }                               //This uses polling to toggle the LED by checking for inputs constantly.
 }
 
