@@ -12,6 +12,7 @@
 #define LED7 BIT0; //...except LEDs 7 and 8, which need to be put on pins 2.0 and 2.1.
 #define LED8 BIT1;
 #define BUTTON BIT3;
+#define buttonIn (P1IN & BUTTON);
 
 void main(void)
 {
@@ -29,16 +30,38 @@ void main(void)
     P1REN |= BUTTON; //Enable the pull resistor on pin 1.3.
     P1OUT |= BUTTON; //Tell the pull resistor to pull up.
 
-    int pos = 0x01; //Initialize position variable.
+    CCTL0 = CCIE; //Enable interrupts for the first capture/compare register.
+    TACTL = TASSEL_2 + MC_2; //Set the Clock_A control to:
+                             //1. TASSEL_2 which selects SMCLK, the internal 1MHz clock.
+                             //2. MC_2 which selects the continuous counting mode.
+
+    int state = 0x00; //Initialize state machine variables.
+    int nextState = 0x01;
     int speed = 0; //Initialize speed variable.
+
+    __enable_interrupt();           //Enable interrupts.
+
+    __bis_SR_register(LPM0 + GIE);  //Enter low power mode with interrupts.
 
     while(1)
     {
-        for(pos = 0x01; pos <= 0x80; pos = pos << 1){
-            P1OUT &= pos;
-        }
-        for(pos = 0x80; pos >= 0x01; pos = pos >> 1){
-            P1OUT &= pos;
-        }
+        //I need to use a state machine for this.
+        //Intial State
+        //State 1
+        //State 2
+        //State 3
+        //State 4
+        //State 5
+        //State 6
+        //State 7
+        //State 8
+        //State 9
+        //Win State
+        //Lose State
     }
+}
+
+#pragma vector=TIMER0_A0_VECTOR
+__interrupt void Timer_A (void) {
+
 }
