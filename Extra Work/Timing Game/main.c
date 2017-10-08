@@ -35,29 +35,12 @@ void main(void)
                              //1. TASSEL_2 which selects SMCLK, the internal 1MHz clock.
                              //2. MC_2 which selects the continuous counting mode.
 
-    int state = 0x00; //Initialize state machine variables.
-    int nextState = 0x01;
     int speed = 0; //Initialize speed variable.
 
     __enable_interrupt();           //Enable interrupts.
 
     __bis_SR_register(LPM0 + GIE);  //Enter low power mode with interrupts.
 
-    while(1)
-    {
-        //I need to use a state machine for this.
-        //Intial State
-        //State 1
-        //State 2
-        //State 3
-        //State 4
-        //State 5
-        //State 6
-        //State 7
-        //State 8
-        //State 9
-        //Win State
-        //Lose State
 }
 
 #pragma vector=TIMER0_A0_VECTOR
@@ -104,9 +87,4 @@ __interrupt void Port_1(void) {
     __delay_cycles(1000);
     TA0CCTL0 = CCIE; //Re-enable timer interrupts.
     P1IFG &= ~BUTTON; //Clear the interrupt flag register on P1.7
-}
-
-#pragma vector=TIMER0_A0_VECTOR
-__interrupt void Timer_A (void) {
-
 }
