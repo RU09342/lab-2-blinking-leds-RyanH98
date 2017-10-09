@@ -1,25 +1,20 @@
 # Multiple Blink
-Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
+### Ryan Hare
 
-
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
-
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
-
-## Extra Work
-When you take a look at the development boards, you are limited to what is built into the platform.
-
-### Even More LEDs
-Since up to this point you should have hopefully noticed that you are simply just controlling each pin on your processor. So... what is keeping you from putting an LED on each pin? Can you actually control the speed of each of these LEDs?
-
-### Patterned Lights
-If you can control a ton of LEDs, what is keeping you from having a little fun? Why not try and make something like a moving face or other moving object in lights. *CAUTION* I would only do this if you have finished the rest of the lab.
-
-### UART Pattern Control
-If you have been using UART, could you set which LEDs are on or off based off some UART command? Would you want to send an Array over UART such as [1 0 1 0] or would you want to send a byte that corresponds to the status? Can you not only say which LEDs are on, but also tell them to blink at a particular rate if they were on (so LED1 Blink every 100ms)?
+## Background
+In the previous part of the lab, the microcontroller was programmed to blink a single LED. In this part, instead of a single LED, two LEDs will be programmed to blink.
+Just like the previous part, the pins will be set as outputs using the PxDIR registers, and the outputs will be enabled using the PxOUT registers.
+## Devices
+This code contains variants for five different MSP430 launchpad devices: The MSP430G2553, the MSP430FR5994, the MSP430FR6989, the MSP430FR2311, and the MSP430F5529.
+## Usage
+Once the specific code for a board has been loaded, both LEDs on the board will blink at steady intervals.
+### Possible Improvements
+Once again, a for loop is used as a delay. This is inefficient and could be easily replaced by a timer.
+## Board-Specific Code Differences
+Unlike the simple blink, there are some board-specific differences between the code. This is only due to the second LED on each board being at a different pin assignment.
+For the G2553, the second LED is on pin 1.6
+For the FR5994, the second LED is on pin 1.2
+For the FR6989, the second LED is on pin 9.7
+For the FR2311, the second LED is on pin 2.1
+For the F5529, the second LED is on pin 4.7
+The first LED remains the same, pin 1.0, on all five boards.

@@ -1,29 +1,19 @@
 # Simple Blink
-For starters, you will need to blink one of the on-board LED's at a particular rate. It is up to you to determine what rate you want to blink it at, however it has to be symmetrical (50% Duty Cycle), meaning equal times on and off. You should attempt multiple different speeds before moving on to the next part of the lab.
+### Ryan Hare
 
-## YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
-
-## How to not damage your processor
-Remember that your microprocessors are not hooked up to a nuclear power plant and they can only provide a finite amount of current and power to your attached devices. For each of your processors you should see what the maximum supply current is for the digital output pins and note it in your designs. Diodes are an interesting device where the V-I curve becomes almost a short circuit after only a couple volts. If you have a diode biased to operate at say 1 volt above its turn on voltage, you are going to be drawing quite a bit of amperage. 
-
-Before you actually begin this lab, take the time to mess around with the simulation below and understand what the importance of the series resistance is in the design. What does the resistance prevent from happening? Does having this resistance impact the performance of the LED?
-
-<a href="http://everycircuit.com/circuit/5180823226810368">LED Current - EveryCircuit</a><br>
-<iframe width="560" height="360" src="http://everycircuit.com/embed/5180823226810368" frameborder="0"></iframe>
-
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
-
-## Extra Work
-Since this is so basic, there are a few things which might be interesting to implement.
-
-### UART Control: Single Character
-For starters, it would be interesting to tie in some of the UART code that was used before into this project. You might want to have the speed of the blinking controlled by a character sent over UART. For example, 's' could be a slow setting, 'm' could be medium speed, 'f' could be fast, and 'o' could be off.
-
-### UART Control: Rate Number
-Instead of depending on a character, what if we wanted to send a blinking period in milliseconds? So instead of 's', you could send something like '100' which corresponds to a 100 millisecond delay between the time the LED turns on again. Before you decide to tackle this, I would take a look at using a logic analyzer to see exactly what your computer is sending to your microprocessor. Also remember that the code previously provided will only service the UART Buffer one character at a time.
+## Background
+One of the most basic functions a microprocessor can perform is repeating a very simple set of code. This part of the lab was no different. The code here simply blinks a single LED on the MSP430 microprocessor.
+An essential part of blinking an LED on a microprocessor is enabling the outputs on the required pin. This is done through the use of registers. A register on the microprocessor named PxDIR assigns the pins x.0 through x.7 to be inputs (if the value is one) or outputs (if the value is zero). To blink an LED, the pin that the LED is connected to will be set as an output. Then, a value can be passed into a PxOUT register to enable or disable the output to that specific pin.
+Another part of most of this code is the line:
+WDTCTL = WDTPW | WDTHOLD;
+This line of code disables the watchdog timer. This allows the processor to enter infinite loops and hang on code without restarting the board. While the watchdog timer has many uses, it is disabled for convinience.
+## Devices
+This code contains variants for five different MSP430 launchpad devices: The MSP430G2553, the MSP430FR5994, the MSP430FR6989, the MSP430FR2311, and the MSP430F5529.
+## Usage
+The code is run on any of the five different devices. Once loaded onto the board, the LED will begin to blink at a steady interval.
+### Other Uses
+This code is extremely basic. Setting the output pin is just the groundwork for interfacing with other peripherals.
+### Possible Improvements
+The code uses a for loop in order to delay the blinking on the LED. This could be improved by the use of an actual timer instead. The timer would allow the board to enter low power mode, using a greatly reduced amount of energy.
+## Board-Specific Code Differences
+All five boards have an LED on pin 1.0. As such, the code for all five boards is identical.

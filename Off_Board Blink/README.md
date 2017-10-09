@@ -1,25 +1,18 @@
 # Off Board Blink
-Now that we have the whole blinking LED out of the way, why don't we try making things a little more convenient by taking the G2553 off the development board and into a breadboard. In addition to the software, your README needs to also contain a picture of your circuit with at least 2 LEDs blinking all on a breadboard an without a development board. This means that you will need:
-* Proper power being supplied to the processor
-* Proper Reset Circuitry 
-* Proper Bypass and Bulk Capacitors as needed
+### Ryan Hare
 
-Please be advised that you can easily damage or destroy one of the pins on the MSP430 by applying the wrong voltage or attempting to draw too much current from it. Really check your design before you power up to ensure you do not need request another processor.
-
-## "Do I need to use a power supply to power this thing?"
-In the beginning part of the exercise, I would say that you can use the 5V/3.3V rails built into the development board by running wires. However, I would recommend looking into how to supply the processor from something like a battery or the power supply. You might want to look into different types of regulators. For example, your circuits may be powered off of a battery that is only 1.8V, or on a system that can only supply you with 13V.
-
-## "What about the buttons and resistors and LEDS?"
-You remember those parts bins in the back of the teaching labs? They contain most everything you will need to do this portion of the lab. You should really make a effort to try and replicate what is on those development boards on the breadboard so you can begin to see what is needed to design with a microcontroller. Mess around with different color LEDS and see if they behave the same as the simple Red LEDs.
-
-# YOU NEED TO CREATE THE FOLLOWING FOLDER
-* MSP430G2553
-
-## Extra Work
-Once you get to this point, you are pretty much set in terms of GPIO mastery getting the LEDs to blink, but there are some more exploratory tasks that you can do.
-
-### Off-Board Programming 
-Do we need to keep re-inserting the MSP into the development board to program it, or is there some way to keep the chip in the circuit? For starters, try to connect the header which connects the debugger and emulator (that parts that is really dense in parts) to your chip on your board. You will need to look at the datasheets for the MSP430G2553 and the Launchpad itself to see where and how to connect to the programmer. Next, you should really look at using the JTAG connector that is also available on your board.
-
-### UART/Button Control
-Remember that stuff you did a few parts ago? Can you actually get all of that working again off of the development board? Can you control which lights are on, the speed they blink at, etc.
+## Background
+For this part of the lab, something very similar to the simple blink was performed, with a slight twist. The processor was transferred to a breadboard and used to blink an LED on the breadboard. As such, the code is very similar to the normal LED blinking code. The main difference between the off board blink and the simple blink is that additional electrical wiring is needed in order to prevent the processor from being fried by excessive current.
+This code also uses a timer instead of the previously used methods to blink the LED. The timer is enabled by setting the TACTL (Timer A control) register equal to TASSEL_2 + MC_2 + ID_3. This selects the clock to use (SMCLK), sets the counting mode to continuous, and enables an 8x internal divider. Whenever the timer counts up one, the interrupt is triggered, toggling the LED. This is a very useful thing because it means the processor can be idle most of the time, saving a lot of power.
+## Devices
+As the MSP430G2553 is the only launchpad board of the five with a removable processor, this part only contains code for the G2553.
+## Usage
+The G2553 can be removed from the launchpad board and placed onto a motherboard (it needs to be on the launchpad for programming, however). As such, it is necessary to know the pins in order to wire the processor.
+As another note, the RST pin on the G2553 needs to be connected to the power as well, since it resets the board on a low signal and doesn't reset on a high signal.
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Off_Board%20Blink/Assets/G2553Pins.png)
+In this specific situation, the output is on pin 1.0, 3.3 volts were put onto the Vcc pin, and Vss was grounded. In order to prevent the processor from being damaged, a special circuit was built. This circuit involved a BJT. The BJT was used to extremely limit the current draw from the processor while still allowing the pin to control the LED.
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Off_Board%20Blink/Assets/OffboardCircuit.png)
+### Other Uses
+Since the processor can be removed from the board, this has a much wider variety of applications. The processor can be integrated into any number of breadboard circuits, making use of one or several of the pins to control LEDs, read from peripherals, or any other number of uses.
+## Demonstration
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Off_Board%20Blink/Assets/OffboardDemo.gif)
