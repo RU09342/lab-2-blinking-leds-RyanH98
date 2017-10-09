@@ -18,11 +18,11 @@ An additional improvement that could be made to this code is debouncing. When th
 ## Board-Specific Code Differences
 The code for the boards is mostly the same between them, however the pin assignments for the buttons changes by board.
 
-*For the G2553, the button is on pin 1.3
-*For the F5529, the button is on pin 2.1
-*For the FR6989, the button is on pin 1.1
-*For the FR5994, the button is on pin 5.6
-*For the FR2311, the button is on pin 1.1
+* For the G2553, the button is on pin 1.3
+* For the F5529, the button is on pin 2.1
+* For the FR6989, the button is on pin 1.1
+* For the FR5994, the button is on pin 5.6
+* For the FR2311, the button is on pin 1.1
 
 Additionally, for this code to actually work on the FR5994 and F5529, another line of code was needed.
 
