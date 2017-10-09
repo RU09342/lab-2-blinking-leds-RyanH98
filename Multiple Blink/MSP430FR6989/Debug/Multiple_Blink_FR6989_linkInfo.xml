@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <link_info>
-   <banner>MSP430 Linker PC v16.9.3.LTS</banner>
+   <banner>MSP430 Linker PC v16.9.4.LTS</banner>
    <copyright>Copyright (c) 2003-2017 Texas Instruments Incorporated</copyright>
-   <link_time>0x59d4fd1a</link_time>
+   <link_time>0x59db9854</link_time>
    <link_errors>0x0</link_errors>
    <output_file>Multiple_Blink_FR6989.out</output_file>
    <entry_point>
@@ -22,247 +22,247 @@
          <name>&lt;internal&gt;</name>
       </input_file>
       <input_file id="fl-29">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>copy_decompress_lzss.obj</name>
       </input_file>
       <input_file id="fl-2a">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>copy_decompress_none.obj</name>
       </input_file>
       <input_file id="fl-2b">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int27.obj</name>
       </input_file>
       <input_file id="fl-2c">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>isr_trap.obj</name>
       </input_file>
       <input_file id="fl-2d">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int28.obj</name>
       </input_file>
       <input_file id="fl-2e">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int29.obj</name>
       </input_file>
       <input_file id="fl-2f">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int30.obj</name>
       </input_file>
       <input_file id="fl-30">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int31.obj</name>
       </input_file>
       <input_file id="fl-31">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int32.obj</name>
       </input_file>
       <input_file id="fl-32">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int33.obj</name>
       </input_file>
       <input_file id="fl-33">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int34.obj</name>
       </input_file>
       <input_file id="fl-34">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int35.obj</name>
       </input_file>
       <input_file id="fl-35">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int36.obj</name>
       </input_file>
       <input_file id="fl-36">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int37.obj</name>
       </input_file>
       <input_file id="fl-37">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int38.obj</name>
       </input_file>
       <input_file id="fl-38">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int39.obj</name>
       </input_file>
       <input_file id="fl-39">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int40.obj</name>
       </input_file>
       <input_file id="fl-3a">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int41.obj</name>
       </input_file>
       <input_file id="fl-3b">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int42.obj</name>
       </input_file>
       <input_file id="fl-3c">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int43.obj</name>
       </input_file>
       <input_file id="fl-3d">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int44.obj</name>
       </input_file>
       <input_file id="fl-3e">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int45.obj</name>
       </input_file>
       <input_file id="fl-3f">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int46.obj</name>
       </input_file>
       <input_file id="fl-40">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int47.obj</name>
       </input_file>
       <input_file id="fl-41">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int48.obj</name>
       </input_file>
       <input_file id="fl-42">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int49.obj</name>
       </input_file>
       <input_file id="fl-43">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int50.obj</name>
       </input_file>
       <input_file id="fl-44">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int51.obj</name>
       </input_file>
       <input_file id="fl-45">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int52.obj</name>
       </input_file>
       <input_file id="fl-46">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int53.obj</name>
       </input_file>
       <input_file id="fl-47">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int54.obj</name>
       </input_file>
       <input_file id="fl-48">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>copy_zero_init.obj</name>
       </input_file>
       <input_file id="fl-49">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult16_f5hw.obj</name>
       </input_file>
       <input_file id="fl-4a">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult32_f5hw.obj</name>
       </input_file>
       <input_file id="fl-4b">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult64_f5hw.obj</name>
       </input_file>
       <input_file id="fl-4c">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult1632_f5hw.obj</name>
       </input_file>
       <input_file id="fl-4d">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult3264_f5hw.obj</name>
       </input_file>
       <input_file id="fl-4e">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>boot.obj</name>
       </input_file>
       <input_file id="fl-4f">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>args_main.obj</name>
       </input_file>
       <input_file id="fl-50">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>autoinit_wdt.obj</name>
       </input_file>
       <input_file id="fl-51">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>boot_special.obj</name>
@@ -274,49 +274,49 @@
          <name>mpu_init.o</name>
       </input_file>
       <input_file id="fl-53">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>startup.obj</name>
       </input_file>
       <input_file id="fl-54">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>pre_init.obj</name>
       </input_file>
       <input_file id="fl-55">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>exit.obj</name>
       </input_file>
       <input_file id="fl-56">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>exit_gvars.obj</name>
       </input_file>
       <input_file id="fl-57">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>_lock.obj</name>
       </input_file>
       <input_file id="fl-58">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>cpy_tbl.obj</name>
       </input_file>
       <input_file id="fl-59">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult16.obj</name>
       </input_file>
       <input_file id="fl-5a">
-         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\</path>
+         <path>C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>memcpy.obj</name>
@@ -354,20 +354,20 @@
          <name>.text:__mpu_init</name>
          <load_address>0x10034</load_address>
          <run_address>0x10034</run_address>
-         <size>0x28</size>
+         <size>0x2c</size>
          <input_file_ref idref="fl-52"/>
       </object_component>
       <object_component id="oc-6af">
          <name>.text:abort</name>
-         <load_address>0x1005c</load_address>
-         <run_address>0x1005c</run_address>
+         <load_address>0x10060</load_address>
+         <run_address>0x10060</run_address>
          <size>0x6</size>
          <input_file_ref idref="fl-55"/>
       </object_component>
       <object_component id="oc-687">
          <name>.text:_system_pre_init</name>
-         <load_address>0x10062</load_address>
-         <run_address>0x10062</run_address>
+         <load_address>0x10066</load_address>
+         <run_address>0x10066</run_address>
          <size>0x4</size>
          <input_file_ref idref="fl-54"/>
       </object_component>
@@ -608,7 +608,7 @@
          <size>0x84</size>
          <input_file_ref idref="fl-2"/>
       </object_component>
-      <object_component id="oc-67e">
+      <object_component id="oc-67d">
          <name>.debug_info</name>
          <load_address>0x381</load_address>
          <run_address>0x381</run_address>
@@ -622,7 +622,7 @@
          <size>0xf5</size>
          <input_file_ref idref="fl-4e"/>
       </object_component>
-      <object_component id="oc-df">
+      <object_component id="oc-e0">
          <name>.debug_info</name>
          <load_address>0x57d</load_address>
          <run_address>0x57d</run_address>
@@ -633,27 +633,27 @@
          <name>.debug_info</name>
          <load_address>0x729</load_address>
          <run_address>0x729</run_address>
-         <size>0x100</size>
+         <size>0xf2</size>
          <input_file_ref idref="fl-52"/>
       </object_component>
       <object_component id="oc-688">
          <name>.debug_info</name>
-         <load_address>0x829</load_address>
-         <run_address>0x829</run_address>
+         <load_address>0x81b</load_address>
+         <run_address>0x81b</run_address>
          <size>0x148</size>
          <input_file_ref idref="fl-54"/>
       </object_component>
-      <object_component id="oc-6b3">
+      <object_component id="oc-6b0">
          <name>.debug_info</name>
-         <load_address>0x971</load_address>
-         <run_address>0x971</run_address>
+         <load_address>0x963</load_address>
+         <run_address>0x963</run_address>
          <size>0x117</size>
          <input_file_ref idref="fl-55"/>
       </object_component>
       <object_component id="oc-7ac">
          <name>.debug_info</name>
-         <load_address>0xa88</load_address>
-         <run_address>0xa88</run_address>
+         <load_address>0xa7a</load_address>
+         <run_address>0xa7a</run_address>
          <size>0xb4</size>
       </object_component>
       <object_component id="oc-733">
@@ -677,7 +677,7 @@
          <size>0x20</size>
          <input_file_ref idref="fl-2"/>
       </object_component>
-      <object_component id="oc-67d">
+      <object_component id="oc-67f">
          <name>.debug_line</name>
          <load_address>0xc2</load_address>
          <run_address>0xc2</run_address>
@@ -691,7 +691,7 @@
          <size>0x2a</size>
          <input_file_ref idref="fl-4e"/>
       </object_component>
-      <object_component id="oc-e2">
+      <object_component id="oc-df">
          <name>.debug_line</name>
          <load_address>0x129</load_address>
          <run_address>0x129</run_address>
@@ -702,20 +702,20 @@
          <name>.debug_line</name>
          <load_address>0x171</load_address>
          <run_address>0x171</run_address>
-         <size>0x44</size>
+         <size>0x45</size>
          <input_file_ref idref="fl-52"/>
       </object_component>
-      <object_component id="oc-68b">
+      <object_component id="oc-68c">
          <name>.debug_line</name>
-         <load_address>0x1b5</load_address>
-         <run_address>0x1b5</run_address>
+         <load_address>0x1b6</load_address>
+         <run_address>0x1b6</run_address>
          <size>0x3e</size>
          <input_file_ref idref="fl-54"/>
       </object_component>
-      <object_component id="oc-6b2">
+      <object_component id="oc-6b3">
          <name>.debug_line</name>
-         <load_address>0x1f3</load_address>
-         <run_address>0x1f3</run_address>
+         <load_address>0x1f4</load_address>
+         <run_address>0x1f4</run_address>
          <size>0x3d</size>
          <input_file_ref idref="fl-55"/>
       </object_component>
@@ -737,20 +737,20 @@
          <name>.debug_frame</name>
          <load_address>0x70</load_address>
          <run_address>0x70</run_address>
-         <size>0x47</size>
+         <size>0x39</size>
          <input_file_ref idref="fl-52"/>
       </object_component>
-      <object_component id="oc-68c">
+      <object_component id="oc-68b">
          <name>.debug_frame</name>
-         <load_address>0xb7</load_address>
-         <run_address>0xb7</run_address>
+         <load_address>0xa9</load_address>
+         <run_address>0xa9</run_address>
          <size>0x39</size>
          <input_file_ref idref="fl-54"/>
       </object_component>
-      <object_component id="oc-6b1">
+      <object_component id="oc-6b4">
          <name>.debug_frame</name>
-         <load_address>0xf0</load_address>
-         <run_address>0xf0</run_address>
+         <load_address>0xe2</load_address>
+         <run_address>0xe2</run_address>
          <size>0x39</size>
          <input_file_ref idref="fl-55"/>
       </object_component>
@@ -844,28 +844,28 @@
          <size>0x20</size>
          <input_file_ref idref="fl-2c"/>
       </object_component>
-      <object_component id="oc-e0">
+      <object_component id="oc-e1">
          <name>.debug_aranges</name>
          <load_address>0x40</load_address>
          <run_address>0x40</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-51"/>
       </object_component>
-      <object_component id="oc-6a3">
+      <object_component id="oc-6a4">
          <name>.debug_aranges</name>
          <load_address>0x60</load_address>
          <run_address>0x60</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-52"/>
       </object_component>
-      <object_component id="oc-689">
+      <object_component id="oc-68a">
          <name>.debug_aranges</name>
          <load_address>0x80</load_address>
          <run_address>0x80</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-54"/>
       </object_component>
-      <object_component id="oc-6b0">
+      <object_component id="oc-6b1">
          <name>.debug_aranges</name>
          <load_address>0xa0</load_address>
          <run_address>0xa0</run_address>
@@ -879,7 +879,7 @@
          <size>0x1b</size>
          <input_file_ref idref="fl-2"/>
       </object_component>
-      <object_component id="oc-67f">
+      <object_component id="oc-67e">
          <name>.debug_pubnames</name>
          <load_address>0x1b</load_address>
          <run_address>0x1b</run_address>
@@ -893,28 +893,28 @@
          <size>0x1d</size>
          <input_file_ref idref="fl-4e"/>
       </object_component>
-      <object_component id="oc-e1">
+      <object_component id="oc-e2">
          <name>.debug_pubnames</name>
          <load_address>0x63</load_address>
          <run_address>0x63</run_address>
          <size>0x38</size>
          <input_file_ref idref="fl-51"/>
       </object_component>
-      <object_component id="oc-6a4">
+      <object_component id="oc-6a3">
          <name>.debug_pubnames</name>
          <load_address>0x9b</load_address>
          <run_address>0x9b</run_address>
          <size>0x21</size>
          <input_file_ref idref="fl-52"/>
       </object_component>
-      <object_component id="oc-68a">
+      <object_component id="oc-689">
          <name>.debug_pubnames</name>
          <load_address>0xbc</load_address>
          <run_address>0xbc</run_address>
          <size>0x27</size>
          <input_file_ref idref="fl-54"/>
       </object_component>
-      <object_component id="oc-6b4">
+      <object_component id="oc-6b2">
          <name>.debug_pubnames</name>
          <load_address>0xe3</load_address>
          <run_address>0xe3</run_address>
@@ -1082,7 +1082,7 @@
          <name>.text</name>
          <load_address>0x10000</load_address>
          <run_address>0x10000</run_address>
-         <size>0x66</size>
+         <size>0x6a</size>
          <contents>
             <object_component_ref idref="oc-6a7"/>
             <object_component_ref idref="oc-6a0"/>
@@ -1659,17 +1659,17 @@
          <name>.debug_info</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0xb3c</size>
+         <size>0xb2e</size>
          <contents>
             <object_component_ref idref="oc-6fd"/>
             <object_component_ref idref="oc-6a8"/>
             <object_component_ref idref="oc-669"/>
-            <object_component_ref idref="oc-67e"/>
+            <object_component_ref idref="oc-67d"/>
             <object_component_ref idref="oc-660"/>
-            <object_component_ref idref="oc-df"/>
+            <object_component_ref idref="oc-e0"/>
             <object_component_ref idref="oc-6a2"/>
             <object_component_ref idref="oc-688"/>
-            <object_component_ref idref="oc-6b3"/>
+            <object_component_ref idref="oc-6b0"/>
             <object_component_ref idref="oc-7ac"/>
          </contents>
       </logical_group>
@@ -1677,30 +1677,30 @@
          <name>.debug_line</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0x230</size>
+         <size>0x231</size>
          <contents>
             <object_component_ref idref="oc-733"/>
             <object_component_ref idref="oc-6ab"/>
             <object_component_ref idref="oc-66c"/>
-            <object_component_ref idref="oc-67d"/>
+            <object_component_ref idref="oc-67f"/>
             <object_component_ref idref="oc-6bc"/>
-            <object_component_ref idref="oc-e2"/>
+            <object_component_ref idref="oc-df"/>
             <object_component_ref idref="oc-6a5"/>
-            <object_component_ref idref="oc-68b"/>
-            <object_component_ref idref="oc-6b2"/>
+            <object_component_ref idref="oc-68c"/>
+            <object_component_ref idref="oc-6b3"/>
          </contents>
       </logical_group>
       <logical_group id="lg-79d" display="never" color="cyan">
          <name>.debug_frame</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0x129</size>
+         <size>0x11b</size>
          <contents>
             <object_component_ref idref="oc-6ac"/>
             <object_component_ref idref="oc-e3"/>
             <object_component_ref idref="oc-6a1"/>
-            <object_component_ref idref="oc-68c"/>
-            <object_component_ref idref="oc-6b1"/>
+            <object_component_ref idref="oc-68b"/>
+            <object_component_ref idref="oc-6b4"/>
          </contents>
       </logical_group>
       <logical_group id="lg-79f" display="never" color="cyan">
@@ -1738,10 +1738,10 @@
          <contents>
             <object_component_ref idref="oc-6aa"/>
             <object_component_ref idref="oc-67c"/>
-            <object_component_ref idref="oc-e0"/>
-            <object_component_ref idref="oc-6a3"/>
-            <object_component_ref idref="oc-689"/>
-            <object_component_ref idref="oc-6b0"/>
+            <object_component_ref idref="oc-e1"/>
+            <object_component_ref idref="oc-6a4"/>
+            <object_component_ref idref="oc-68a"/>
+            <object_component_ref idref="oc-6b1"/>
          </contents>
       </logical_group>
       <logical_group id="lg-7a5" display="never" color="cyan">
@@ -1751,12 +1751,12 @@
          <size>0xff</size>
          <contents>
             <object_component_ref idref="oc-6a9"/>
-            <object_component_ref idref="oc-67f"/>
+            <object_component_ref idref="oc-67e"/>
             <object_component_ref idref="oc-661"/>
-            <object_component_ref idref="oc-e1"/>
-            <object_component_ref idref="oc-6a4"/>
-            <object_component_ref idref="oc-68a"/>
-            <object_component_ref idref="oc-6b4"/>
+            <object_component_ref idref="oc-e2"/>
+            <object_component_ref idref="oc-6a3"/>
+            <object_component_ref idref="oc-689"/>
+            <object_component_ref idref="oc-6b2"/>
          </contents>
       </logical_group>
       <logical_group id="lg-7a7" display="never" color="cyan">
@@ -1827,7 +1827,7 @@
          <name>SEGMENT_3</name>
          <load_address>0xffc6</load_address>
          <run_address>0xffc6</run_address>
-         <size>0xa0</size>
+         <size>0xa4</size>
          <flags>0x5</flags>
          <contents>
             <logical_group_ref idref="lg-40"/>
@@ -2814,18 +2814,18 @@
          <page_id>0x0</page_id>
          <origin>0x10000</origin>
          <length>0x14000</length>
-         <used_space>0x66</used_space>
-         <unused_space>0x13f9a</unused_space>
+         <used_space>0x6a</used_space>
+         <unused_space>0x13f96</unused_space>
          <attributes>RWIX</attributes>
          <usage_details>
             <allocated_space>
                <start_address>0x10000</start_address>
-               <size>0x66</size>
+               <size>0x6a</size>
                <logical_group_ref idref="lg-7ab"/>
             </allocated_space>
             <available_space>
-               <start_address>0x10066</start_address>
-               <size>0x13f9a</size>
+               <start_address>0x1006a</start_address>
+               <size>0x13f96</size>
             </available_space>
          </usage_details>
       </memory_area>
@@ -8639,17 +8639,17 @@
       </symbol>
       <symbol id="sm-682">
          <name>_system_pre_init</name>
-         <value>0x10062</value>
+         <value>0x10066</value>
          <object_component_ref idref="oc-687"/>
       </symbol>
       <symbol id="sm-68c">
          <name>C$$EXIT</name>
-         <value>0x1005c</value>
+         <value>0x10060</value>
          <object_component_ref idref="oc-6af"/>
       </symbol>
       <symbol id="sm-68d">
          <name>abort</name>
-         <value>0x1005c</value>
+         <value>0x10060</value>
          <object_component_ref idref="oc-6af"/>
       </symbol>
    </symbol_table>

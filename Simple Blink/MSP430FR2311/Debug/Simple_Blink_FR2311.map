@@ -1,7 +1,7 @@
 ******************************************************************************
-                  MSP430 Linker PC v16.9.3                     
+                  MSP430 Linker PC v16.9.4                     
 ******************************************************************************
->> Linked Wed Oct 04 11:24:13 2017
+>> Linked Mon Oct 09 11:40:14 2017
 
 OUTPUT FILE NAME:   <Simple_Blink_FR2311.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 0000f132
@@ -182,7 +182,7 @@ MODULE SUMMARY
     +--+------------------+------+---------+---------+
        Total:             40     0         0      
                                                   
-    C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.3.LTS\lib\rts430x_lc_sd_eabi.lib
+    C:\ti\ccsv7\tools\compiler\ti-cgt-msp430_16.9.4.LTS\lib\rts430x_lc_sd_eabi.lib
        boot_special.obj   18     0         0      
        isr_trap.obj       8      0         0      
        exit.obj           6      0         0      
