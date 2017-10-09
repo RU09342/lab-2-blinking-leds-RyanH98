@@ -12,12 +12,12 @@ The G2553 can be removed from the launchpad board and placed onto a motherboard 
 
 As another note, the RST pin on the G2553 needs to be connected to the power as well, since it resets the board on a low signal and doesn't reset on a high signal.
 
-![G2553Pins](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Off_Board%20Blink/Assets/G2553Pins.png)
+![G2553Pins](https://raw.githubusercontent.com/RU09342/lab-2-blinking-leds-RyanH98/master/Off_Board%20Blink/Assets/G2553Pins.PNG)
 
 In this specific situation, the output is on pin 1.0, 3.3 volts were put onto the Vcc pin, and Vss was grounded. In order to prevent the processor from being damaged, a special circuit was built. This circuit involved a BJT. The BJT was used to extremely limit the current draw from the processor while still allowing the pin to control the LED.
 
-![OffboardCircuit](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Off_Board%20Blink/Assets/OffboardCircuit.png)
+![OffboardCircuit](https://raw.githubusercontent.com/RU09342/lab-2-blinking-leds-RyanH98/master/Off_Board%20Blink/Assets/OffboardCircuit.PNG)
 ### Other Uses
 Since the processor can be removed from the board, this has a much wider variety of applications. The processor can be integrated into any number of breadboard circuits, making use of one or several of the pins to control LEDs, read from peripherals, or any other number of uses.
 ## Demonstration
-![OffboardDemo](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Off_Board%20Blink/Assets/OffboardDemo.gif)
+![OffboardDemo](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/blob/master/Off_Board%20Blink/Assets/OffboardDemo.gif?raw=true)
