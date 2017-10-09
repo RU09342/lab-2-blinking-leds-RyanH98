@@ -14,14 +14,10 @@ Once again, a for loop is used as a delay. This is inefficient and could be easi
 ## Board-Specific Code Differences
 Unlike the simple blink, there are some board-specific differences between the code. This is only due to the second LED on each board being at a different pin assignment.
 
-For the G2553, the second LED is on pin 1.6
-
-For the FR5994, the second LED is on pin 1.2
-
-For the FR6989, the second LED is on pin 9.7
-
-For the FR2311, the second LED is on pin 2.1
-
-For the F5529, the second LED is on pin 4.7
+*For the G2553, the second LED is on pin 1.6
+*For the FR5994, the second LED is on pin 1.2
+*For the FR6989, the second LED is on pin 9.7
+*For the FR2311, the second LED is on pin 2.1
+*For the F5529, the second LED is on pin 4.7
 
 The first LED remains the same, pin 1.0, on all five boards.
