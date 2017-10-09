@@ -10,7 +10,7 @@ The processor was programmed and then placed onto the breadboard. The circuit di
 
 The reset pin on the G2553 also needs to be set high by connecting it to Vcc to keep the board from resetting.
 
-![GameCircuit](/Assets/GameCircuit.png?raw=true)
+![GameCircuit](https://github.com/RU09342/lab-2-blinking-leds-RyanH98/tree/master/Extra%20Work/Assets/GameCircuit.png)
 
 The pins for the G2553 are shown below
 
